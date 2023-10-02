@@ -16,12 +16,24 @@ public class MainActivity extends AppCompatActivity {
         Cat vaska = new Cat();
         vaska.talk(3);
 
+        Puma bagira = new Puma();
+        bagira.talk();
+
+        Cat puma = new Puma();
+        puma.talk();
+
+        Cat murzik = new Lion();
+        murzik.talk();
+
+
         TextView textView2 = (TextView) findViewById(R.id.textView);
-        textView2.setText(vaska.talk(3));
+        textView2.setText(bagira.talk());
 
         TextView textView3 = (TextView) findViewById(R.id.textView2);
-        textView3.setText(vaska.talk("hey"));
+        textView3.setText(puma.talk());
 
+        TextView textView4 = (TextView) findViewById(R.id.textView3);
+        textView4.setText(murzik.talk());
 
 //        myCat = new Cat(4, "Puma","Бенгальская","Серая");
 //        myCat.talk();
