@@ -26,4 +26,12 @@ public class Cat extends Animal{
         return("Meow! My name is " + name + ", and I'm " + age + " years old " + breed + "  " + color + ".");
     }
 
+    public String talk(int age) {
+        Log.i("talk()",  "Meow! My name is " + name + ", and I'm " + age + " years old " + breed + "  " + color + ".");
+        return("Meow! My name is " + name + ", and I'm " + age + " years old " + breed + "  " + color + ".");
+    }
+    public String talk(String hello) {
+        Log.i("talk()",  "Meow! My name is " + name + ", and I'm " + age + " " + hello);
+        return("Meow! My name is " + name + ", and I'm " + age + " " + hello);
+    }
 }
