@@ -15,91 +15,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat vaska = new Cat();
-
-
-        Puma bagira = new Puma();
-
-
-        Cat puma = new Puma();
-
-
-        Cat murzik = new Lion();
+        Cat cat1 = new Cat();
+        TextView textView2 = (TextView) findViewById(R.id.textView);
+        textView2.setText("cat1 number of legs:  "+ cat1.number0fLegs + Cat.whatCatsLike());
+        Log.i("number0fLegs", "cat1 number of legs:  "+ cat1.number0fLegs + Cat.whatCatsLike());
 
         Lion lion = new Lion();
+        lion.talk();
 
+        TextView textView3 = (TextView) findViewById(R.id.textView2);
+        textView3.setText(lion.talk());
 
-        ArrayList<Cat> cats = new ArrayList<>();
-        cats.add(vaska);
-        cats.add(bagira);
-        cats.add(puma);
-        cats.add(murzik);
-        cats.add(lion);
-
-
-        Cat cat = cats.get(0);
-        Cat cat1 = cats.get(1);
-        Cat cat2 = cats.get(2);
-        Cat cat3 = cats.get(3);
-        Cat cat4 = cats.get(5);
-
-
-        Puma puma1 = (Puma)cats.get(1);
-        puma1.talk();
-
-        Cat cat5 = cats.get(4);
-
-        if(cat5 instanceof Puma){
-            Puma puma2 = (Puma)cat5;
-            puma2.talk();
-            TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText(puma2.talk());
-        }else{
-            TextView textView3 = (TextView) findViewById(R.id.textView);
-            textView3.setText("This is not Puma");
-            Log.i("instanceof", "This is not Puma");
-        }
-
-
-
-
-        TextView textView2 = (TextView) findViewById(R.id.textView);
-        textView2.setText(puma1.talk());
-
-
-
-
-
-//        myCat = new Cat(4, "Puma","Бенгальская","Серая");
-//        myCat.talk();
+//        cat1.numberOfLegs--;
 //
+//        TextView textView3 = (TextView) findViewById(R.id.textView2);
+//        textView3.setText("cat1 number of legs:  "+ cat1.number0fLegs);
+//        Log.i("number0fLegs", "cat1 number of legs:  "+ cat1.number0fLegs);
 //
-//        Cat murzik = new Cat(3,"Murzik","Домашняя","Белая");
-//        murzik.talk();
-//
-//
-//
-//
-//        Cat glasha = new Cat();
-//        glasha.age = 1;
-//        glasha.name = "Glasha";
-//        glasha.number0fLegs = 4;
-//        Log.i( "number0fLegs", String.valueOf(glasha.number0fLegs));
-//        glasha.talk();
-//
-//        Puma puma = new Puma();
-//        puma.name = "Leo";
-//
-//        puma.breathe();
-//        puma.talk();
-//
-//        puma.isAlive = true;
-//        Log.i("isAlive", String.valueOf(puma.isAlive));
-//        Log.i("breathe()",   "My name is "  + puma.name +   "and " + puma.breathe());
-//
-//
-//
-//
+//        Cat cat2 = new Cat();
+//        TextView textView4 = (TextView) findViewById(R.id.textView3);
+//        textView4.setText("cat1 number of legs:  "+ cat1.number0fLegs);
+//        Log.i("number0fLegs", "cat2 number of legs:  "+ cat2.number0fLegs);
+
 //
 //        TextView textView2 = (TextView) findViewById(R.id.textView);
 //        textView2.setText(myCat.talk());

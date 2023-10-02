@@ -5,6 +5,8 @@ import android.util.Log;
 public class Cat extends Animal{
     int age;
     String name;
+
+    final static int numberOfLegs = 4;
 //    private String breed;
 //    private String color;
 //
@@ -42,4 +44,7 @@ public class Cat extends Animal{
         Log.i("talk()",  "Meow! I'm cat My name is " + name + ", and I'm " + age + " " + hello);
         return("Meow! My name is " + name + ", and I'm " + age + " " + hello);
     }
+
+    public static final String whatCatsLike() {
+        return " I like playing, jumping and sometimes scratching";}
 }
